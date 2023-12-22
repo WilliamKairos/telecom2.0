@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/telecommunications?useSSL=true&allowPublicKeyRetrieval=true&characterEncoding=utf8
+    username: root
+    password: wu123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.telecommunications.pojo
+  configuration:
+      map-underscore-to-camel-case: true
